@@ -1,0 +1,8 @@
+name = "NNParamsPrinter"
+uuid = "1ce897a9-95c2-40e1-99fc-436ddf268509"
+authors = ["onedeeper <udesh86@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Lux = "b2108857-7c20-44ae-9111-449ecde12c47"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
