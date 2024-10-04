@@ -26,3 +26,42 @@ U = Chain(
 nn_init_params, snn = Lux.setup(rng, U);
 print_weights_and_biases(nn_init_params)
 ```
+### Tested and Supported:
+- [x] Conv
+- [x] BatchNorm
+- [x] MaxPool
+- [x] Dropout
+- [x] FlattenLayer
+- [x] Dense
+- [x] LSTMCell
+- [x] RNNCell
+- [x] GRUCell
+- [ ] AdaptiveMaxPool
+- [ ] AdaptiveMeanPool
+- [ ] AlphaDropout
+- [ ] Bilinear
+- [ ] BranchLayer
+- [ ] Chain
+- [ ] ConvTranspose
+- [ ] CrossCor
+- [ ] Embedding
+- [ ] GlobalMaxPool
+- [ ] GlobalMeanPool
+- [ ] GroupNorm
+- [ ] InstanceNorm
+- [ ] LayerNorm
+- [ ] Maxout
+- [ ] MeanPool
+- [ ] NoOpLayer
+- [ ] PairwiseFusion
+- [ ] Parallel
+- [ ] Recurrence
+- [ ] ReshapeLayer
+- [ ] Scale
+- [ ] SelectDim
+- [ ] SkipConnection
+- [ ] StatefulRecurrentCell
+- [ ] Upsample
+- [ ] VariationalHiddenDropout
+- [ ] WeightNorm
+- [ ] WrappedFunction
