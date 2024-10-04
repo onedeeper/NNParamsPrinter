@@ -1,6 +1,7 @@
 # NNParamsPrinter.jl
 
-`NNParamsPrinter.jl` is a simple package for printing Lux neural network parameters in a readable format.
+`NNParamsPrinter.jl` is a simple package for printing neural network parameters in a readable format.
+Currently only supported for **Lux**. 
 
 ## Installation
 
