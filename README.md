@@ -24,7 +24,7 @@ U = Chain(
 )
 
 nn_init_params, snn = Lux.setup(rng, U);
-print_weights_and_biases(nn_init_params)
+printWeightsBiases(U, nn_init_params)
 ```
 ### Tested and Supported:
 - [x] Conv
