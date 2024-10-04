@@ -14,3 +14,10 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
 julia = "1.10.5"
+AutomaticDocstrings = "1.0.5"
+BenchmarkTools = "1.5.0"
+Lux = "1.1.0"  
+Random = "1"  
+Revise = "3.6.0"  
+StableRNGs = "1.0.2"  
+Test = "1"  
