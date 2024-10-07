@@ -2,9 +2,6 @@ module NNParamsPrinter
 
 # Export the function to make it accessible when the package is imported
 export printWeightsBiases
-
-using Lux
-using AutomaticDocstrings
 """
     printWeightsBiases(net, nn_params; print_values = false)
 
@@ -28,7 +25,10 @@ function printWeightsBiases(net, nn_params; print_values = false)
                 println("Layer $layer : $(layer_type) : \n\tweights (shape: $(size(weights))):\n\tbias (shape: $(size(bias))):")
             end
         catch
-            if layer_type isa Lux.LSTMCell || layer_type isa Lux.GRUCell || layer_type isa Lux.RNNCell
+            layer_name = string(typeof(layer_type))
+            result = match(r"^[^{]*", layer_name)
+            println("Layer $layer : $(layer_type)")
+            if result.match  == "LSTMCell" || result.match == "GRUCell" || result.match == "RNNCell"
                 for cell in keys(layer_params)
                     if print_values
                         println("\t$cell (shape: $(size(layer_params[cell]))):\n\t\t$(layer_params[cell])")
