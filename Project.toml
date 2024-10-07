@@ -1,7 +1,7 @@
 name = "NNParamsPrinter"
 uuid = "1ce897a9-95c2-40e1-99fc-436ddf268509"
 authors = ["onedeeper <udesh86@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 
